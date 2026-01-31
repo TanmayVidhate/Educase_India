@@ -1,7 +1,11 @@
 import React from 'react'
 import Button from '../Components/Button'
 
+import { useNavigate } from 'react-router-dom'
+
 function LandingPage() {
+
+    const navigate = useNavigate()
     return (
         <>
             <div className='h-screen w-screen  flex justify-center items-center '>
@@ -18,7 +22,7 @@ function LandingPage() {
                     </div>
 
                     <div className='mt-5 flex justify-center items-center'>
-                        <Button name="create account" className="!bg-[#6c25ff] rounded-sm w-[95%]"/>
+                        <Button name="create account" className="!bg-[#6c25ff] rounded-sm w-[95%]" onClick={()=>{ navigate('/create_account')}}/>
                     </div>
 
                     <div className='mt-2 mb-10 flex justify-center items-center'>

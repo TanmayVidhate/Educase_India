@@ -26,7 +26,7 @@ function LandingPage() {
                     </div>
 
                     <div className='mt-2 mb-10 flex justify-center items-center'>
-                        <Button name="already registered?Login" className="!bg-[#cebafb] rounded-sm w-[95%] !text-black"/>
+                        <Button name="already registered?Login" className="!bg-[#cebafb] rounded-sm w-[95%] !text-black" onClick={()=>{ navigate('/signin')}}/>
                     </div>
                 </div>
 

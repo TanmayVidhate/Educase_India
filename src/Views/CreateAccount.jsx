@@ -131,9 +131,9 @@ function CreateAccount() {
 
                             <div className='relative mt-5 mb-5'>
                                 <Label title="Company Name" className="absolute  " />
-                                <InputField className="" 
-                                
-                                type="text"
+                                <InputField className=""
+
+                                    type="text"
                                     name="companyname"
                                     {...register("companyname", {
                                         required: "Company Name is required",
@@ -156,10 +156,31 @@ function CreateAccount() {
                         </div>
                     </div>
 
-                    <div className='mt-5 mb-8 flex justify-center items-center'>
+                    {/* <div className='mt-5 mb-8 flex justify-center items-center'>
                         <Button name="create account" className="!bg-[#6c25ff] rounded-sm w-[95%]" />
-                    </div>
+                    </div> */}
 
+                    <div className='w-full p-1   mt-10 mb-5 sm:mt-11 '>
+                        {
+                            (Object.entries(errors).length > 0) ? (
+                            <Button name="create account"
+                                disabled={true}
+                                hover={true}
+                                // onClick={AddFormData}
+                                // onClick={handleSubmit(onSubmit)}
+                                className="!px-5 !py-2 !rounded-lg !w-full !bg-[#6c25ff]"
+                            />)
+                                : (
+                                    <Button name="create account"
+                                        disabled={false}
+                                        hover={true}
+                                        // onClick={AddFormData}
+                                        // onClick={handleSubmit(onSubmit)}
+                                        className="!px-5 !py-2 !rounded-lg !w-full !bg-[#6c25ff]"
+                                    />
+                                )
+                        }
+                    </div>
                 </div>
 
             </div>

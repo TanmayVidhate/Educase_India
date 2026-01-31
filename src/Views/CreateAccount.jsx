@@ -22,7 +22,10 @@ function CreateAccount() {
         mode: "onChange",
         defaultValues: {
             fullname: "",
-
+            mobile_no_field: "",
+            email_field: "",
+            pass_field:"",
+            companyname:""
         },
     });
 
@@ -36,7 +39,7 @@ function CreateAccount() {
             <div className='h-screen w-screen  flex justify-center items-center '>
 
                 <div className='border border-gray-100 min-h-min w-[350px] p-2 bg-[#f7f8f9]'>
-                    <div className='pl-2 w-1/2'>
+                    <div className='pl-2 w-1/2 mt-5'>
                         <p className='text-2xl font-bold '>Create your PopX account</p>
                     </div>
                     <div className='my-1 text-gray-400 w-full pl-2 '>

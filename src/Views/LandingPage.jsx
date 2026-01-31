@@ -1,19 +1,28 @@
 import React from 'react'
+import Button from '../Components/Button'
 
 function LandingPage() {
     return (
         <>
-            <div className='border-4 border-red-500 h-screen w-screen  flex justify-center items-center'>
+            <div className='h-screen w-screen  flex justify-center items-center '>
 
-                <div className='border-4 border-red-500 h-[80vh] w-1/4 p-2'>
-                    <div className='border-4 border-red-500 h-2/3'>
+                <div className='border border-gray-100 min-h-min w-[350px] p-2 bg-[#f7f8f9]'>
+                    <div className='h-[50vh]'>
 
                     </div>
-                    <div className=''>
-                        <h2 className='text-3xl font-bold'>Welcome to PopX</h2>
+                    <div className='pl-2'>
+                        <p className='text-2xl font-bold '>Welcome to PopX</p>
                     </div>
-                    <div className='my-1 text-gray-400'>
+                    <div className='my-1 text-gray-400 w-2/3 pl-2'>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div className='mt-5 flex justify-center items-center'>
+                        <Button name="create account" className="!bg-[#6c25ff] rounded-sm w-[95%]"/>
+                    </div>
+
+                    <div className='mt-2 mb-10 flex justify-center items-center'>
+                        <Button name="already registered?Login" className="!bg-[#cebafb] rounded-sm w-[95%] !text-black"/>
                     </div>
                 </div>
 

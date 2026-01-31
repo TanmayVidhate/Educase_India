@@ -3,7 +3,7 @@ import React from 'react'
 function Label({ title }) {
   
   return (
-    <div className='w-full m-1 text-gray-700 font-semibold text-lg md:text-xl lg:text-base '>
+    <div className='w-full m-1 text-blue-600 font-semibold text-lg md:text-xl lg:text-base '>
       {title}  
     </div>
   )

@@ -5,6 +5,7 @@ import { Routes,Route } from 'react-router-dom';
 import LandingPage from './Views/LandingPage';
 import CreateAccount from './Views/CreateAccount';
 import SigninPage from './Views/SigninPage';
+import AccountSettings from './Views/AccountSettings';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/create_account" element={<CreateAccount />} />
         <Route path="/signin" element={<SigninPage />} />
+        <Route path="/account" element={<AccountSettings />} />
       </Routes>
     </>
   )

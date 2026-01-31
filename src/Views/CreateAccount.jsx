@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { useForm } from "react-hook-form";
+import { useNavigate } from 'react-router-dom';
 
 //import components
 import Button from '../Components/Button'
@@ -10,6 +11,8 @@ import Label from '../Components/Label'
 
 
 function CreateAccount() {
+
+    const navigate= useNavigate();
 
     const {
         register,
@@ -24,8 +27,8 @@ function CreateAccount() {
             fullname: "",
             mobile_no_field: "",
             email_field: "",
-            pass_field:"",
-            companyname:""
+            pass_field: "",
+            companyname: ""
         },
     });
 
@@ -166,19 +169,17 @@ function CreateAccount() {
                     <div className='w-full p-1   mt-10 mb-5 sm:mt-11 '>
                         {
                             (Object.entries(errors).length > 0) ? (
-                            <Button name="create account"
-                                disabled={true}
-                                hover={true}
-                                // onClick={AddFormData}
-                                // onClick={handleSubmit(onSubmit)}
-                                className="!px-5 !py-2 !rounded-lg !w-full !bg-[#6c25ff]"
-                            />)
+                                <Button name="create account"
+                                    disabled={true}
+                                    hover={true}
+                                    onClick={() => { navigate('/account') }}
+                                    className="!px-5 !py-2 !rounded-lg !w-full !bg-[#6c25ff]"
+                                />)
                                 : (
                                     <Button name="create account"
                                         disabled={false}
                                         hover={true}
-                                        // onClick={AddFormData}
-                                        // onClick={handleSubmit(onSubmit)}
+                                        onClick={() => { navigate('/account') }}
                                         className="!px-5 !py-2 !rounded-lg !w-full !bg-[#6c25ff]"
                                     />
                                 )

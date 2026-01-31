@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from "react-hook-form";
+import { useNavigate } from 'react-router-dom';
 
 //import components
 import Label from '../Components/Label'
@@ -7,6 +8,8 @@ import InputField from '../Components/InputField'
 import Button from '../Components/Button';
 
 function SigninPage() {
+
+    const navigate = useNavigate()
 
     const {
         register,
@@ -89,16 +92,14 @@ function SigninPage() {
                                 <Button name="login"
                                     disabled={true}
                                     hover={true}
-                                    // onClick={AddFormData}
-                                    // onClick={handleSubmit(onSubmit)}
+                                    onClick={()=>{ navigate('/account')}}
                                     className="!px-5 !py-2 !rounded-lg !w-full !bg-[#6c25ff]"
                                 />)
                                 : (
                                     <Button name="login"
                                         disabled={false}
                                         hover={true}
-                                        // onClick={AddFormData}
-                                        // onClick={handleSubmit(onSubmit)}
+                                         onClick={()=>{ navigate('/account')}}
                                         className="!px-5 !py-2 !rounded-lg !w-full !bg-[#6c25ff]"
                                     />
                                 )

@@ -12,7 +12,7 @@ import Label from '../Components/Label'
 
 function CreateAccount() {
 
-    const navigate= useNavigate();
+    const navigate = useNavigate();
 
     const {
         register,
@@ -159,6 +159,20 @@ function CreateAccount() {
                                     </span>
                                 )}
                             </div>
+
+                            <div className='relative mt-5 mb-5'>
+                                <Label title="Are you an Agency" />
+                                <label>
+                                    <input type="radio" name="agency" value="yes" />
+                                    Yes
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="agency" value="no" />
+                                    No
+                                </label>
+                            </div>
+
                         </div>
                     </div>
 

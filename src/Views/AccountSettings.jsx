@@ -17,7 +17,9 @@ function AccountSettings() {
                     </div>
 
                     <div className='mt-5 flex justify-start items-start gap-10'>
-                        <div className='h-20 w-20 border border-red-500 rounded-full'></div>
+                        <div className=''>
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt='image' className='h-20 w-20 object-cover rounded-full' />
+                        </div>
 
                         <div className=''>
                             <p className='text-sm font-bold'>Marry Doe</p>

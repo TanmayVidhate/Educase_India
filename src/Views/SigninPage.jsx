@@ -36,7 +36,7 @@ function SigninPage() {
             toast.error("Please Enter Email and Password..")
         }
         else {
-            console.log("all is ok...")
+            
             navigate("/account")
         }
     }

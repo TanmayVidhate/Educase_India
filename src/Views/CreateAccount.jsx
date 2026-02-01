@@ -160,14 +160,14 @@ function CreateAccount() {
                                 )}
                             </div>
 
-                            <div className='relative mt-5 mb-5'>
+                            <div className='relative mt-5 mb-1 '>
                                 <Label title="Are you an Agency" />
-                                <label>
+                                <label >
                                     <input type="radio" name="agency" value="yes" />
                                     Yes
                                 </label>
 
-                                <label>
+                                <label className='ml-5'>
                                     <input type="radio" name="agency" value="no" />
                                     No
                                 </label>
@@ -180,7 +180,7 @@ function CreateAccount() {
                         <Button name="create account" className="!bg-[#6c25ff] rounded-sm w-[95%]" />
                     </div> */}
 
-                    <div className='w-full p-1   mt-10 mb-5 sm:mt-11 '>
+                    <div className='w-full p-1  mt-5 mb-5  '>
                         {
                             (Object.entries(errors).length > 0) ? (
                                 <Button name="create account"
